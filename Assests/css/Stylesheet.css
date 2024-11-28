@@ -169,6 +169,87 @@ Top-bar .account-cart a {
   text-decoration: none;
 }
 
+/* Information Section */
+.information-section {
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 30px 0; /* Add spacing around the section */
+  border-top: 1px solid #ddd; /* Optional: Top border for separation */
+}
+
+.information-section h5 {
+  color: #444; /* Darker text color for headings */
+  font-size: 16px;
+  font-weight: bold; /* Make headings bold */
+  margin-bottom: 15px; /* Add space below headings */
+}
+
+.information-section ul {
+  list-style: none; /* Remove list styling */
+  padding: 0;
+}
+
+.information-section ul li {
+  margin-bottom: 10px; /* Add space between items */
+  color: #666; /* Light grey text */
+}
+
+.information-section ul li a {
+  text-decoration: none; /* Remove link underline */
+  color: #007bff; /* Link color */
+}
+
+.information-section ul li a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.information-section .social-icons a {
+  margin-right: 10px; /* Add spacing between icons */
+  font-size: 18px; /* Icon size */
+  color: #007bff; /* Icon color */
+}
+
+.information-section .social-icons a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.subscribe-form input[type="email"] {
+  padding: 8px;
+  width: 70%; /* Adjust input width */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.subscribe-form button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #e65c00;
+}
+
+/* Footer */
+.footer {
+  background-color: #000; /* Black background */
+  color: white; /* White text color */
+  padding: 10px 0; /* Add spacing */
+  text-align: center; /* Center-align text */
+  font-size: 14px; /* Smaller text size */
+  margin-top: 30px; /* Space above footer */
+}
+
+.footer p {
+  margin: 0; /* Remove default margin */
+  font-size: 14px;
+}
+
+
+
 .navbar-icons .nav-link i {
   font-size: 20px;
   margin-bottom: 5px;
@@ -185,6 +266,8 @@ Top-bar .account-cart a {
 .cart-container {
   margin-top: 50px;
 }
+
+
 
 .cart-container h2 {
   font-size: 2rem;
@@ -334,5 +417,23 @@ Top-bar .account-cart a {
 @media (max-width: 767px) {
   .Top-bar .account-cart {
     display: none; /* Hide on small screens */
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .information-section .row > div {
+    margin-bottom: 20px; /* Add spacing between sections */
+    text-align: center; /* Center-align content on small screens */
+  }
+
+  .subscribe-form input[type="email"] {
+    width: 100%; /* Full-width input on small screens */
+    margin-bottom: 10px; /* Add spacing below input */
+  }
+
+  .subscribe-form button {
+    width: 100%; /* Full-width button on small screens */
   }
 }
