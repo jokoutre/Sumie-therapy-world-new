@@ -462,111 +462,46 @@ h6 {
     }
 }
 
-@media (max-width: 768px) {
-    /* Mobile Layout */
-    header .top-bar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header .navbar ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    header .navbar li {
-        margin: 10px 10px;
-    }
-}
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-.container .row .col-md-3 {
-    visibility: hidden;
+/* Large Screens (Desktop) */
+@media (min-width: 768px) {
+  .Top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Space out logo, search, and icons */
+    align-items: center;
+  }
+  .Top-bar .logo {
+    flex: 1;
+    text-align: left;
+  }
+  .Top-bar .search-bar {
+    flex: 2;
+    max-width: 400px;
+  }
+  .Top-bar .account-cart {
+    flex: 1;
+    text-align: right;
+  }
 }
 
-
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-.container .row .col-md-3 {
-    visibility: hidden;
-    margin-top: -387px;
-}
-
-
-  .product-card {
-        margin: 0 auto; /* Centers horizontally */
-        display: flex;
-        flex-direction: column; /* Aligns content inside the card vertically */
-        align-items: center; /* Centers content horizontally inside the card */
-    }
-
-
-
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-	
-}
-
-/* iPad 3 (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (-webkit-min-device-pixel-ratio : 2),
-only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (min-resolution: 192dpi) { 
-
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-	
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-	
-}
-
-/* Retina displays ----------- */
-@media  only screen 
-and (-webkit-min-device-pixel-ratio : 2), 
-only screen 
-and (min-resolution: 192dpi) {
-
+/* Small Screens (Mobile) */
+@media (max-width: 767px) {
+  .Top-bar {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align all elements */
+  }
+  .Top-bar .logo {
+    margin-bottom: 15px; /* Add space below the logo */
+  }
+  .Top-bar .search-bar {
+    width: 100%; /* Take full width */
+    margin-bottom: 15px; /* Add space below the search bar */
+  }
+  .Top-bar .account-cart {
+    display: flex;
+    justify-content: center; /* Align icons horizontally */
+    gap: 15px; /* Add spacing between icons */
+  }
 }
 

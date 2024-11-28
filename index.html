@@ -16,17 +16,35 @@
 <header>
   <div class="container">
     <div class="Top-bar">
-      <div class="col-xl-3 logo text-center"> <a href="index.html"> <img src="Assests/Images/Sumie-Therapy-world.png" alt="The Therapy Store Logo" class="logo-img img-fluid"> </a> </div>
-      <div class="col-xl-6 search-bar">
+      <!-- Logo -->
+      <div class="logo text-center">
+        <a href="index.html">
+          <img src="Assests/Images/Sumie-Therapy-world.png" alt="The Therapy Store Logo" class="logo-img img-fluid">
+        </a>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
         <form class="form-inline">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search" />
-          <button class="btn btn-primary" type="submit"> <i class="fas fa-search"></i> </button>
+          <input type="search" class="form-control" placeholder="search..." aria-label="Search" />
+          <button class="btn btn-primary" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
         </form>
       </div>
-      <div class="col-xl-3 account-cart text-right"> <a href="#" class="account-link"> <i class="fas fa-user"></i> My Account </a> <a href="cart.html" class="cart-link"> <i class="fas fa-shopping-cart"></i> My Cart </a> </div>
+
+      <!-- Account and Cart Icons -->
+      <div class="account-cart">
+        <a href="#" class="account-link"><i class="fas fa-user"></i> My Account</a>
+        <a href="cart.html" class="cart-link">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
     </div>
   </div>
 </header>
+
 <nav class="navbar navbar-expand-lg navbarline">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon navbartogglericon"></span> </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
