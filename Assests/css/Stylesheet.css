@@ -391,6 +391,17 @@ h6 {
 	
 	
 }
+.imagecard1 {
+	
+	
+	  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+
+}
+
 
 
 
